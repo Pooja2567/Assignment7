@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Parameters</title>
+</head>
+<body>
+	<h1>Login Details</h1>
+	<p>Username: <span id="username-display"></span></p>
+	<p>Password: <span id="password-display"></span></p>
+    <script>
+	    const username = localStorage.getItem("username");
+		const password = localStorage.getItem("password");
+        document.getElementById("username-display").innerText = username;
+		document.getElementById("password-display").innerText = password;
+	</script>
+</body>
+</html>
